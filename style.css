@@ -1,0 +1,285 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #111;
+  color: white;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+  background: #1ebe5d;
+  transform: scale(1.1);
+}
+.whatsapp-float img {
+  width: 30px;
+  height: 30px;
+}
+
+
+#atletas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.fechar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: red;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* 🔥 ESSENCIAL */
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: black;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+li {
+  background: #222;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+.banner {
+  height: 500px;
+
+  background: url('img/banner.jpg') no-repeat;
+  background-size: cover;
+  background-position: contain; /* muda isso depois se precisar */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.banner h2,
+.banner button {
+  position: relative;
+  z-index: 1;
+}
+
+.banner p {
+  color: #00ff6a;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: bold; /* Deixa a letra mais "grossa" e forte */
+}
+
+button {
+  padding: 10px 20px;
+  background: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+section {
+  padding: 30px;
+}
+
+.card {
+  width: 250px;
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.foto {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #c9a96e; /* dourado estilo luta */
+}
+
+.info {
+  flex: 1;
+}
+
+.bio {
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+}
+
+/* Container dos botões */
+.float-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  z-index: 999;
+}
+
+/* Botão padrão */
+.float-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.float-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Cores específicas */
+.whatsapp {
+  background: #25D366;
+}
+
+.instagram {
+  background: #E4405F;
+}
+
+.maps {
+  background: #4285F4;
+}
+
+/* Hover */
+.float-btn:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Matilha Thai</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔥 BOTÕES FLUTUANTES -->
+<div class="float-buttons">
+
+  <a href="https://wa.me/5567996714731" target="_blank" class="float-btn whatsapp">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+  </a>
+
+  <a href="https://www.instagram.com/matilhathai/" target="_blank" class="float-btn instagram">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+  </a>
+
+  <a href="https://maps.app.goo.gl/H4uCDRDnUPaL1GBEA" target="_blank" class="float-btn maps">
+    <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png">
+  </a>
+
+</div>
+
+<!-- 🔥 HEADER ÚNICO -->
+<header>
+  <img src="img/logo.png" class="logo">
+  <h1>🐺 Matilha Thai</h1>
+  <p>Desde 2018 formando campeões</p>
+  <p>ℹ️ 1º Estúdio de Muaythai do Rio de Janeiro</p>
+  <p>🧩 Estúdio de Muaythai para PcD’s</p>
+</header>
+
+<!-- 🔥 BANNER -->
+<section class="banner">
+  <h2>Forjando guerreiros todos os dias</h2>
+  <p>Disciplina • Respeito • Evolução</p>
+
+  <button onclick="agendar1()">Agendar Aula Experimental Muaythai</button>
+  <p>Muaythai Estúdio e Muaythai kids</p>
+
+  <button onclick="agendar2()">Agendar Aula Experimental Fitclub</button>
+  <p>Jiu Jitsu, Pilates solo e Yoga</p>
+</section>
+
+<!-- 🔥 ATLETAS -->
+<section>
+  <h2>🏆 Campeões da Matilha Thai</h2>
+  <div id="atletas"></div>
+</section>
+
+<!-- 🔥 EVENTOS -->
+<section>
+  <h2>📅 Eventos da Semana</h2>
+  <ul id="eventos"></ul>
+</section>
+
+<!-- 🔥 RESULTADOS -->
+<section>
+  <h2>🥊 Resultados Recentes</h2>
+  <ul id="resultados"></ul>
+</section>
+
+<!-- 🔥 FOOTER -->
+<footer>
+  <p>© 2026 Matilha Thai</p>
+  <button onclick="dev()">Desenvolvedor</button>
+</footer>
+
+<!-- 🔥 MODAL (AGORA NO LUGAR CERTO) -->
+<div id="modal" class="modal">
+  <span class="fechar" onclick="fecharModal()">✖</span>
+  <img id="modalImg">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
