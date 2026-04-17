@@ -1,0 +1,42 @@
+{
+    "professores":  [
+                        {
+                            "nome":  "Laerte Dias",
+                            "lutas":  8,
+                            "vitorias":  6,
+                            "derrotas":  2,
+                            "foto":  "img/professores/laerte-dias.jpg",
+                            "bio":  "Laerte é o fundador da Matilha Thai. Ele é um professor de Muay Thai, conhecido por seus alunos como o mestre da Matilha.",
+                            "type":  "professor"
+                        },
+                        {
+                            "bio":  "Professor de Muay Thai da Matilha Thai",
+                            "lutas":  1,
+                            "derrotas":  0,
+                            "type":  "professor",
+                            "vitorias":  1,
+                            "nome":  "Cleiton Leite",
+                            "foto":  "img/professores/professor_cleiton_leite.jpg"
+                        }
+                    ],
+    "campeoes":  [
+                     {
+                         "nome":  "Vinicius Junior",
+                         "lutas":  8,
+                         "vitorias":  6,
+                         "derrotas":  2,
+                         "foto":  "img/competidores/vinicius-junior.jpg",
+                         "bio":  "Vinicius é um professor de Muay Thai, conhecido por seus alunos como o mestre do clinch.",
+                         "type":  "campeao"
+                     },
+                     {
+                         "nome":  "Lucas Silva",
+                         "lutas":  8,
+                         "vitorias":  6,
+                         "derrotas":  2,
+                         "foto":  "img/competidores/lucas-silva.jpg",
+                         "bio":  "Lucas é um professor de Muay Thai, conhecido por seus alunos como o cotoco ambidestro.",
+                         "type":  "campeao"
+                     }
+                 ]
+}

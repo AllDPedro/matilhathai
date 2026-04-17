@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matilha Thai - Academia de Muay Thai</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Header Fixo -->
+<header id="header">
+  <div class="container">
+    <img src="img/logo/logo.png" alt="Matilha Thai Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#treinos">Treinos</a></li>
+        <li><a href="#professores">Professores</a></li>
+        <li><a href="#campeoes">Campeões</a></li>
+        <li><a href="#loja">Loja</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <button onclick="agendar1()" class="cta-btn primary sticky-btn">Agendar Aula</button>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="proof-social">+100 alunos treinando • Desde 2018</div>
+    <h1>🐺 Matilha Thai</h1>
+    <h2>Transforme-se em um Guerreiro Inabalável</h2>
+    <p>Domine a arte do Muay Thai e alcance sua evolução pessoal. Disciplina que muda vidas!</p>
+    <div class="hero-buttons">
+      <button onclick="agendar1()" class="cta-btn primary">Comece Hoje - Agendar Aula Experimental</button>
+      <button onclick="agendar2()" class="cta-btn secondary">Agendar Aula FitClub</button>
+    </div>
+    <p class="urgency">Vagas limitadas - Garanta sua aula agora!</p>
+    <p class="hero-sub">Muay Thai Estúdio, Muay Thai Kids, Jiu-Jitsu, Pilates Solo e Yoga</p>
+  </div>
+</section>
+
+<!-- Sobre Section -->
+<section id="sobre" class="section">
+  <div class="container">
+    <h2>Sobre a Matilha Thai</h2>
+    <p>Desde 2018, a Matilha Thai é o 1º Estúdio de Muay Thai do Rio de Janeiro, com foco em qualidade de vida, formação de atletas e competidores, disciplina e evolução pessoal. Somos especializados em criar uma comunidade saudável e forte identidade de marca.</p>
+    <p>Oferecemos treinamentos para jovens, adultos e também uma área dedicada às mulheres com o FitClub.</p>
+    <button onclick="agendar1()" class="cta-btn primary">Garanta Sua Vaga Agora</button>
+  </div>
+</section>
+
+<!-- Treinos Section -->
+<section id="treinos" class="section">
+  <div class="container">
+    <h2>Nossos Treinos</h2>
+    <p class="urgency">Agenda quase cheia - Garanta sua aula hoje!</p>
+    <div class="treinos-grid">
+      <div class="treino-card">
+        <h3>Muay Thai Estúdio</h3>
+        <p>Treinamento completo para jovens e adultos, focado em técnica e condicionamento físico.</p>
+        <button onclick="agendar1()" class="cta-btn">Comece Hoje</button>
+      </div>
+      <div class="treino-card">
+        <h3>Muay Thai Kids</h3>
+        <p>Programa especial para crianças, promovendo disciplina e saúde desde cedo.</p>
+        <button onclick="agendar1()" class="cta-btn">Inscreva Seu Filho</button>
+      </div>
+      <div class="treino-card">
+        <h3>FitClub - Área Feminina</h3>
+        <p>Jiu-Jitsu, Pilates Solo e Yoga para mulheres, com foco em bem-estar e força.</p>
+        <button onclick="agendar2()" class="cta-btn">Garanta Sua Vaga</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Formação de Atletas Section -->
+<section id="formacao" class="section">
+  <div class="container">
+    <h2>Formação de Atletas</h2>
+    <p>Preparação especializada para quem deseja se tornar um competidor de alto nível. Incluímos projetos esportivos e treinamentos intensivos.</p>
+    <p class="urgency">Vagas limitadas para formação avançada!</p>
+    <button onclick="window.open('https://wa.me/5567996714731?text=Quero%20saber%20mais%20sobre%20formação%20de%20atletas', '_blank')" class="cta-btn primary">Quero Ser Campeão</button>
+  </div>
+</section>
+
+<!-- Professores Section -->
+<section id="professores" class="section">
+  <div class="container">
+    <h2>Nossos Professores</h2>
+    <div id="professores-grid" class="grid"></div>
+  </div>
+</section>
+
+<!-- Campeões Section -->
+<section id="campeoes" class="section">
+  <div class="container">
+    <h2>Aqui Formamos Campeões</h2>
+    <p class="section-subtitle">Nossos atletas levam a técnica e a mentalidade da Matilha para o ringue.</p>
+    <div id="campeoes-grid" class="grid"></div>
+  </div>
+</section>
+
+<!-- Aluno Destaque do Mês -->
+<section id="destaque" class="section">
+  <div class="container">
+    <h2>Aluno Destaque do Mês</h2>
+    <div class="destaque-card">
+      <img src="https://via.placeholder.com/300x300?text=Aluno+Destaque" alt="Aluno Destaque do Mês" onclick="abrirModal('https://via.placeholder.com/600x600?text=Aluno+Destaque')">
+      <div class="destaque-info">
+        <h3>João Pedro Santos</h3>
+        <p><strong>Idade:</strong> 25 anos</p>
+        <p><strong>Tempo na Academia:</strong> 6 meses</p>
+        <p><strong>Conquistas:</strong> Perdeu 10kg, ganhou força e confiança. Participou de seu primeiro sparring!</p>
+        <p class="bio">"A Matilha Thai mudou minha rotina. Me sinto mais disciplinado e motivado todos os dias."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Depoimentos Section -->
+<section id="depoimentos" class="section">
+  <div class="container">
+    <h2>O Que Nossos Alunos Dizem</h2>
+    <button onclick="abrirModalDepoimento()" class="cta-btn primary">Deixar Meu Depoimento</button>
+    <div class="depoimentos-grid" id="depoimentos-grid">
+      <div class="depoimento-card">
+        <p>"A Matilha Thai mudou minha vida. Ganhei disciplina e força que jamais imaginei."</p>
+        <cite>- João Silva</cite>
+      </div>
+      <div class="depoimento-card">
+        <p>"Treino aqui há 2 anos e me sinto parte de uma família. Recomendo a todos!"</p>
+        <cite>- Maria Oliveira</cite>
+      </div>
+      <div class="depoimento-card">
+        <p>"O FitClub é incrível! Perdi peso e ganhei confiança em poucos meses."</p>
+        <cite>- Ana Costa</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Loja Section -->
+<section id="loja" class="section">
+  <div class="container">
+    <h2>Loja de Produtos</h2>
+    <div class="loja-grid">
+      <div class="produto-card">
+        <span class="tag mais-vendido">Mais Vendido</span>
+        <img src="img/luvas.jpg" alt="Luvas de Muay Thai" onerror="this.src='https://via.placeholder.com/200x150?text=Luvas'">
+        <h3>Luvas de Muay Thai</h3>
+        <button onclick="whatsappCompra('Luvas de Muay Thai')" class="cta-btn shop-btn">Comprar Agora</button>
+      </div>
+      <div class="produto-card">
+        <img src="img/bandagens.jpg" alt="Bandagens" onerror="this.src='https://via.placeholder.com/200x150?text=Bandagens'">
+        <h3>Bandagens</h3>
+        <button onclick="whatsappCompra('Bandagens')" class="cta-btn shop-btn">Comprar Agora</button>
+      </div>
+      <div class="produto-card">
+        <img src="img/caneleiras.jpg" alt="Caneleiras" onerror="this.src='https://via.placeholder.com/200x150?text=Caneleiras'">
+        <h3>Caneleiras</h3>
+        <button onclick="whatsappCompra('Caneleiras')" class="cta-btn shop-btn">Comprar Agora</button>
+      </div>
+      <div class="produto-card">
+        <span class="tag produto-oficial">Produto Oficial</span>
+        <img src="img/roupas.jpg" alt="Roupas da Marca" onerror="this.src='https://via.placeholder.com/200x150?text=Roupas'">
+        <h3>Roupas da Marca</h3>
+        <button onclick="whatsappCompra('Roupas da Marca')" class="cta-btn shop-btn">Comprar Agora</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Eventos Section -->
+<section id="eventos" class="section">
+  <div class="container">
+    <h2>Eventos da Semana</h2>
+    <ul id="eventos-list"></ul>
+  </div>
+</section>
+
+<!-- Contato Section -->
+<section id="contato" class="section">
+  <div class="container">
+    <h2>Contato</h2>
+    <p>Entre em contato conosco para mais informações.</p>
+    <div class="contato-info">
+      <p>📍 Endereço: [Inserir endereço]</p>
+      <p>📞 Telefone: [Inserir telefone]</p>
+      <p>📧 Email: [Inserir email]</p>
+    </div>
+    <button onclick="window.open('https://wa.me/5567996714731', '_blank')" class="cta-btn primary">Fale no WhatsApp</button>
+    <p>Ou preencha nosso formulário de contato:</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfup2rhS5yGsqE1IqS_ojEdvrk5TXDmcAzNHS-dshSpoUdEIw/viewform" target="_blank" class="cta-btn secondary">Preencher Formulário</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>© 2026 Matilha Thai. Todos os direitos reservados.</p>
+    <button onclick="dev()">Desenvolvido por Allan Delon</button>
+  </div>
+</footer>
+
+<!-- Modal Imagem -->
+<div id="modal" class="modal">
+  <span class="fechar" onclick="fecharModal()">✖</span>
+  <img id="modalImg" alt="">
+</div>
+
+<!-- Modal Depoimento -->
+<div id="modalDepoimento" class="modal">
+  <span class="fechar" onclick="fecharModalDepoimento()">✖</span>
+  <div class="modal-content">
+    <h3>Deixe Seu Depoimento</h3>
+    <form id="depoimentoForm">
+      <input type="text" id="nomeDepoimento" placeholder="Seu Nome" required>
+      <textarea id="comentarioDepoimento" placeholder="Seu depoimento..." required></textarea>
+      <button type="submit" class="cta-btn primary">Enviar Depoimento</button>
+    </form>
+  </div>
+</div>
+
+<!-- Botões Flutuantes -->
+<div class="float-buttons">
+  <a href="https://wa.me/5567996714731" target="_blank" class="float-btn whatsapp">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+  </a>
+  <a href="https://www.instagram.com/matilhathai/" target="_blank" class="float-btn instagram">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+  </a>
+  <a href="https://maps.app.goo.gl/H4uCDRDnUPaL1GBEA" target="_blank" class="float-btn maps">
+    <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Maps">
+  </a>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

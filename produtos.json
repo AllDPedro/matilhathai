@@ -1,0 +1,35 @@
+[
+  {
+    "nome": "Luvas de Muay Thai",
+    "fotos": [
+      {"foto": "img/loja/luvas1.jpg", "specs": "Tamanhos disponíveis: P, M, G, GG. Material: Couro sintético resistente. Cor: Preta. Ideal para treinos e competições."},
+      {"foto": "img/loja/luvas2.jpg", "specs": "Modelo profissional com enchimento extra. Tamanho único ajustável. Cor: Vermelha. Perfeita para lutas."},
+      {"foto": "img/loja/luvas3.jpg", "specs": "Versão leve para sparring. Material: Tecido respirável. Cor: Azul. Conforto máximo."}
+    ],
+    "tag": "Mais Vendido"
+  },
+  {
+    "nome": "Bandagens",
+    "fotos": [
+      {"foto": "img/loja/bandagens1.jpg", "specs": "Comprimento: 4.5m. Material: Algodão elástico. Cores: Branco, Preto. Protege punhos e articulações durante o treino."},
+      {"foto": "img/loja/bandagens2.jpg", "specs": "Modelo premium com velcro. Comprimento: 5m. Material: Poliéster. Cor: Vermelha. Fácil de enrolar."}
+    ],
+    "tag": null
+  },
+  {
+    "nome": "Caneleiras",
+    "fotos": [
+      {"foto": "img/loja/caneleiras1.jpg", "specs": "Tamanhos: P, M, G. Material: EVA acolchoado. Cor: Preta. Amortecimento para chutes e proteção contra impactos."},
+      {"foto": "img/loja/caneleiras2.jpg", "specs": "Modelo com tiras ajustáveis. Material: Couro. Cor: Branco. Máxima proteção para competições."}
+    ],
+    "tag": null
+  },
+  {
+    "nome": "Roupas da Marca",
+    "fotos": [
+      {"foto": "img/loja/roupas1.jpg", "specs": "Inclui shorts e camisetas. Tamanhos: P a GG. Material: Poliéster respirável. Estilo: Matilha Thai estampado."},
+      {"foto": "img/loja/roupas2.jpg", "specs": "Conjunto completo: top + short. Material: Dry-fit. Cor: Preta com logo dourado. Ideal para treinos intensos."}
+    ],
+    "tag": "Produto Oficial"
+  }
+]
