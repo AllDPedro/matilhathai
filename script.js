@@ -192,37 +192,21 @@ function handleScroll() {
   });
 }
 
-// Load data from JSON
-async function loadData() {
-  try {
-    console.log('Carregando atletas.json...');
-    const atletasResponse = await fetch('atletas.json');
-    const atletasData = await atletasResponse.json();
-    atletas = [...atletasData.professores, ...atletasData.campeoes];
-    console.log('Atletas carregados:', atletas);
-
-    console.log('Carregando produtos.json...');
-    const produtosResponse = await fetch('produtos.json');
-    const produtosData = await produtosResponse.json();
-    renderProdutos(produtosData);
-    console.log('Produtos carregados:', produtosData);
-  } catch (error) {
-    console.error('Erro ao carregar dados:', error);
-    // Fallback: carregar dados hardcoded se fetch falhar
-    atletas = [
-      { nome: "Laerte Dias", lutas: 8, vitorias: 6, derrotas: 2, foto: "img/professores/laerte-dias.jpg", bio: "Laerte é o fundador da Matilha Thai.", type: "professor" },
-      { nome: "Cleiton Leite", lutas: 1, vitorias: 1, derrotas: 0, foto: "img/professores/professor_cleiton_leite.jpg", bio: "Professor de Muay Thai da Matilha Thai", type: "professor" },
-      { nome: "Vinicius Junior", lutas: 8, vitorias: 6, derrotas: 2, foto: "img/competidores/vinicius-junior.jpg", bio: "Mestre do clinch.", type: "campeao" },
-      { nome: "Lucas Silva", lutas: 8, vitorias: 6, derrotas: 2, foto: "img/competidores/lucas-silva.jpg", bio: "Cotoco ambidestro.", type: "campeao" }
-    ];
-    console.log('Usando dados fallback:', atletas);
-    renderProdutos([
-      { nome: "Luvas de Muay Thai", foto: "img/loja/luvas.jpg", tag: "Mais Vendido" },
-      { nome: "Bandagens", foto: "img/loja/bandagens.jpg", tag: null },
-      { nome: "Caneleiras", foto: "img/loja/caneleiras.jpg", tag: null },
-      { nome: "Roupas da Marca", foto: "img/loja/roupas.jpg", tag: "Produto Oficial" }
-    ]);
-  }
+// Load data hardcoded (compatível com GitHub Pages)
+function loadData() {
+  atletas = [
+    { nome: "Laerte Dias", lutas: 8, vitorias: 6, derrotas: 2, foto: "img/professores/laerte-dias.jpg", bio: "Laerte é o fundador da Matilha Thai.", type: "professor" },
+    { nome: "Cleiton Leite", lutas: 1, vitorias: 1, derrotas: 0, foto: "img/professores/professor_cleiton_leite.jpg", bio: "Professor de Muay Thai da Matilha Thai", type: "professor" },
+    { nome: "Vinicius Junior", lutas: 8, vitorias: 6, derrotas: 2, foto: "img/competidores/vinicius-junior.jpg", bio: "Mestre do clinch.", type: "campeao" },
+    { nome: "Lucas Silva", lutas: 8, vitorias: 6, derrotas: 2, foto: "img/competidores/lucas-silva.jpg", bio: "Cotoco ambidestro.", type: "campeao" }
+  ];
+  const produtos = [
+    { nome: "Luvas de Muay Thai", fotos: [{foto: "https://via.placeholder.com/600x400?text=Luvas+Preta", specs: "Tamanhos disponíveis: P, M, G, GG. Material: Couro sintético resistente. Cor: Preta. Ideal para treinos e competições."}, {foto: "https://via.placeholder.com/600x400?text=Luvas+Vermelha", specs: "Modelo profissional com enchimento extra. Tamanho único ajustável. Cor: Vermelha. Perfeita para lutas."}, {foto: "https://via.placeholder.com/600x400?text=Luvas+Azul", specs: "Versão leve para sparring. Material: Tecido respirável. Cor: Azul. Conforto máximo."}], tag: "Mais Vendido" },
+    { nome: "Bandagens", fotos: [{foto: "https://via.placeholder.com/600x400?text=Bandagens+Branca", specs: "Comprimento: 4.5m. Material: Algodão elástico. Cores: Branco, Preto. Protege punhos e articulações durante o treino."}, {foto: "https://via.placeholder.com/600x400?text=Bandagens+Vermelha", specs: "Modelo premium com velcro. Comprimento: 5m. Material: Poliéster. Cor: Vermelha. Fácil de enrolar."}], tag: null },
+    { nome: "Caneleiras", fotos: [{foto: "https://via.placeholder.com/600x400?text=Caneleiras+Preta", specs: "Tamanhos: P, M, G. Material: EVA acolchoado. Cor: Preta. Amortecimento para chutes e proteção contra impactos."}, {foto: "https://via.placeholder.com/600x400?text=Caneleiras+Branca", specs: "Modelo com tiras ajustáveis. Material: Couro. Cor: Branco. Máxima proteção para competições."}], tag: null },
+    { nome: "Roupas da Marca", fotos: [{foto: "https://via.placeholder.com/600x400?text=Roupas+Preta", specs: "Inclui shorts e camisetas. Tamanhos: P a GG. Material: Poliéster respirável. Estilo: Matilha Thai estampado."}, {foto: "https://via.placeholder.com/600x400?text=Roupas+Completa", specs: "Conjunto completo: top + short. Material: Dry-fit. Cor: Preta com logo dourado. Ideal para treinos intensos."}], tag: "Produto Oficial" }
+  ];
+  renderProdutos(produtos);
 }
 
 // Render produtos
@@ -248,11 +232,10 @@ function renderProdutos(produtos) {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
-  loadData().then(() => {
-    renderProfessores();
-    renderCampeoes();
-    renderDepoimentos();
-  });
+  loadData();
+  renderProfessores();
+  renderCampeoes();
+  renderDepoimentos();
   renderEventos();
 
   // Formulário de depoimento
